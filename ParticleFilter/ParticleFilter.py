@@ -1,8 +1,8 @@
-import LocationFunctions
+import SimulationEnvironment.LocationFunctions
 import ImageProcessing.ImageLoader as ImageFunctions
-import GridFunctions
-from GridFunctions import Coordinates
-from LocationFunctions import VelocityVec
+import SimulationEnvironment.GridFunctions
+from SimulationEnvironment.GridFunctions import Coordinates
+from SimulationEnvironment.LocationFunctions import VelocityVec
 import numpy as np
 from copy import copy
 import math
@@ -108,7 +108,7 @@ class ParticleFilter():
         return self.ParticleList
 
     def LowVarianceSampler(self):
-        M = len(self.ParticleList)=
+        M = len(self.ParticleList)
 
         P = []
         randomVal = np.random.randn()
